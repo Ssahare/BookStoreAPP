@@ -23,7 +23,8 @@ bookRouter.route('/book')
 	});
 });
 
-//add filter to search desired record by author,id,title or gener
+//add filter to search desired record by author 
+//add id,title or gener
 bookRouter.route('/searchBook')
 .get(function(req, res)
 {
@@ -48,10 +49,6 @@ bookRouter.route('/books/:_Id')
 			res.json(book);
 	});
 });
-
-
-
-
 
 
 
